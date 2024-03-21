@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="invoice__wrapper" id="print__area">
+      <div class="invoice">
+        <div class="invoice__container">
+          <div class="invoice__head">
+
+            <div class="invoice__head__top">
+              <div class="invoice__head__top__left text__start">
+                <!-- img are import  -->
+                TODO
+              </div>
+              <div class="invoice__head__top__right text__end">
+                <h3>Invoice</h3>
+              </div>
+            </div>
+
+            <div class="hr"></div>
+            <div class="invoice__head__middle">
+              <div class="invoice__head__middle__left text__start">
+                <p><span class="text__bold">Date</span>:05/12/2023</p>
+              </div>
+              <div class="inovice__head__middle__right text__end text__bold">
+                <p><span>Invoice No:457125</span></p>
+              </div>
+            </div>
+
+            <div class="hr"></div>
+            <div class="invoice__head__bottom">
+              <div class="invoice__head__bottom__left">
+                <ul>
+                  <li class="text__bold">Invoiced To:</li>
+                  <li>Smith Rhodes</li>
+                  <li>15 Hodges Mews, High Wycombe</li>
+                  <li>HP12 3JL</li>
+                  <li>United Kingdom</li>
+                </ul>
+              </div>
+              <div class="invoice__head__bottom__right text__end">
+                <ul>
+                  <li class="text__bold">Pay To:</li>
+                  <li>Koice Inc</li>
+                  <li>2705 N.Enterprise</li>
+                  <li>Orange, CA 897438</li>
+                  <li>contact@koiceinc.com</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="overflow__view">
+              <div class="invoice__body">
+                <table>
+                  <thead>
+                    <tr>
+                      <td class="text__bold">Services</td>
+                      <td class="text__bold">Description</td>
+                      <td class="text__bold">Rate</td>
+                      <td class="text__bold">QTY</td>
+                      <td class="text__bold">Amount</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Design</td>
+                      <td>Creating a website design</td>
+                      <td>$50.00</td>
+                      <td>10</td>
+                      <td class="text__end">$500.00</td>
+                    </tr>
+                    <tr>
+                      <td>Development</td>
+                      <td>website Development</td>
+                      <td>$50.00</td>
+                      <td>10</td>
+                      <td class="text__end">$500.00</td>
+                    </tr>
+                    <tr>
+                      <td>SEO</td>
+                      <td>Optimize the site for search engines (SEo)</td>
+                      <td>$50.00</td>
+                      <td>10</td>
+                      <td class="text__end">$500.00</td>
+                    </tr>
+                    <tr>
+                      <td>Design</td>
+                      <td>Creating a website design</td>
+                      <td>$50.00</td>
+                      <td>10</td>
+                      <td class="text__end">$500.00</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="invoice__body__bottom">
+                  <div class="invoice__body__info__item border__bottom">
+                    <div class="info__item__td text__end text__bold">
+                      Sub Total:
+                    </div>
+                    <div class="info__item__td text__end">$2150.00</div>
+                  </div>
+
+                  <div class="invoice__body__info__item border__bottom">
+                    <div class="info__item__td text__end text__bold">Tax:</div>
+                    <div class="info__item__td text__end">$215.00</div>
+                  </div>
+
+                  <div class="invoice__body__info__item border__bottom">
+                    <div class="info__item__td text__end text__bold">
+                      Sub Total:
+                    </div>
+                    <div class="info__item__td text__end">$2150.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="invoice__foot text__center">
+              <p>
+                <span class="text__bold text__center">NOTE:&nbsp;</span>This is
+                computer genereted recipt and does not requires physical
+                signature
+              </p>
+              <div class="invoice__btns">
+                <button onclick="printInvoice()" type="button" class="invoice__btn">
+                    <span><i class="fa-solid fa-print"></i></span>
+                    <span>Prints</span>
+                </button>
+                <button type="button" class="invoice__btn">
+                    <span><i class="fa-solid fa-download"></i></span>
+                    <span>Download</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
